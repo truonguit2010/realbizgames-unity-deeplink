@@ -1,0 +1,17 @@
+{
+    "name": "RealBizGames.DeepLink.Runtime",
+    "references": [
+        "RealBizGames.Data.Runtime",
+        "RealBizGames.ChainPattern.Runtime",
+        "RealBizGames.RulePattern.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
