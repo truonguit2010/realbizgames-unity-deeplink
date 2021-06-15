@@ -94,7 +94,7 @@ namespace RealbizGames.Platform
         private void InitRuleEngine()
         {
             _ruleEngine = new GenericRuleEngine<MADeepLinkRuleExecuteOutput, MADeepLink>();
-            _ruleEngine.AddRule(new StoreRatingRule(linkAction: DEEP_LINK_STORE_RATING_ACTION));
+            _ruleEngine.AddRule(new StoreRatingRule(linkAction: DEEP_LINK_STORE_RATING_ACTION, behaviour: this));
         }
 
         public void AddRule(IRule<MADeepLinkRuleExecuteOutput, MADeepLink> rule)

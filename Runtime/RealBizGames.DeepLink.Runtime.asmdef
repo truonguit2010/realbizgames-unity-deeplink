@@ -3,7 +3,8 @@
     "references": [
         "RealBizGames.Data.Runtime",
         "RealBizGames.ChainPattern.Runtime",
-        "RealBizGames.RulePattern.Runtime"
+        "RealBizGames.RulePattern.Runtime",
+        "RealBizGames.StoreRating.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
