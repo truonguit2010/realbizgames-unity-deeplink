@@ -8,9 +8,25 @@ namespace RealbizGames.Platform
     {
         [SerializeField]
         private float _executeAfterSeconds = 1f;
+        [SerializeField]
+        private bool executeOnStart = false;
+
+        [SerializeField]
+        private bool executeOnResume = true;
         void Start()
         {
-            StartCoroutine(Execute());
+            if (executeOnStart) {
+                StartCoroutine(Execute());
+            }
+            
+        }
+
+        private void OnApplicationPause(bool pauseStatus) {
+            if (!pauseStatus) {
+                if (executeOnResume) {
+                    StartCoroutine(Execute());
+                }
+            }
         }
 
         private IEnumerator Execute() {

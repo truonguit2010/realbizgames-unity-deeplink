@@ -136,7 +136,9 @@ namespace RealbizGames.Platform
         public void onDeepLinkActivated(string url)
         {
             Debug.LogFormat("{0} - deeplink onDeepLinkActivated {1}", TAG, url);
-            this._deepLink = new MADeepLink(url);
+            if (!string.IsNullOrEmpty(url)) {
+                this._deepLink = new MADeepLink(url);
+            }
         }
     }
 }
